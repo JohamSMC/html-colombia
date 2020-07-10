@@ -22,9 +22,20 @@ section .slide
 	overflow: hidden;
 	transition: 0.5s ease-in-out;	
 }
+section .slide:last-child
+{
+	border-right: none;
+}
 section .slide:hover
 {
 	flex-grow: 5;
-
+}
+section .slide .content
+{
+	position: absolute;
+	bottom: 0;
+	margin: 40px;
+	padding: 30px;
+	background: #000;
 }
 
