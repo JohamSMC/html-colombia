@@ -40,7 +40,14 @@ section .slide .content
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5;
+	transition: 0.5s;
 	transform: translateY(100px);
+}
+section .slide:hover .content
+{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+	transform: translateY(0);
 }
 
