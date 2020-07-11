@@ -15,7 +15,7 @@ section
 section .slide
 {
 	position: relative;
-	background: #0f0;
+	
 	height: 100%;
 	flex: 1;
 	border-right: 2px solid  #000;
@@ -30,17 +30,53 @@ section .slide:hover
 {
 	flex-grow: 5;
 }
+section .slide:nth-child(1)
+{
+	background: url(images/academiaBoyacenseHistoria.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
+section .slide:nth-child(2)
+{
+	background: url(images/20Julio1.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
+section .slide:nth-child(3)
+{
+	background: url(images/20Julio2.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
+section .slide:nth-child(4)
+{
+	background: url(images/20Julio3.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
+section .slide:nth-child(5)
+{
+	background: url(images/20Julio-florero.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
 section .slide .content
 {
 	position: absolute;
 	bottom: 0;
 	margin: 40px;
 	padding: 30px;
-	background: #000;
+	background: rgb(255,235,59);
+    background: linear-gradient(90deg, rgba(255,214,0,1) 50%, rgba(25,118,210,1) 75%, rgba(183,28,28,1) 95%);
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0s;
 	transform: translateY(100px);
 }
 section .slide:hover .content
@@ -48,6 +84,7 @@ section .slide:hover .content
 	visibility: visible;
 	opacity: 1;
 	transition: 0.5s;
+	transition-delay: 0.5;
 	transform: translateY(0);
 }
 
