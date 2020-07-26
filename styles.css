@@ -4,21 +4,50 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.title
+{
+	height: 10vh;
+	background: black;
+	color: white;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+	}
+.title h1
+{	
+	text-align: center;
+	font-size: 4em;
+}
+
+@media (max-width: 600px) {
+	.title h1
+	{	
+		font-size: 2em;	
+	}  
+	section .slide .content
+	{
+		font-size: 0.7em;
+	}
+	section .slide:hover
+	{
+		flex-grow: ;
+	}
+}
 section
 {
 	position: absolute;
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	border: 2px solid #000;
 }
 section .slide
 {
-	position: relative;
-	
+	position: relative;	
 	height: 100%;
 	flex: 1;
-	border-right: 2px solid  #000;
+	border-right: 1px solid  #000;
 	overflow: hidden;
 	transition: 0.5s ease-in-out;	
 }
@@ -32,35 +61,35 @@ section .slide:hover
 }
 section .slide:nth-child(1)
 {
-	background: url(images/academiaBoyacenseHistoria.jpg);
+	background: url(images/colombiaFlag.jpg);
 	background-position: center center;
 	background-size: cover;
 
 }
 section .slide:nth-child(2)
 {
-	background: url(images/20Julio1.jpg);
+	background: url(images/andeanCondor.jpg);
 	background-position: center center;
 	background-size: cover;
 
 }
 section .slide:nth-child(3)
 {
-	background: url(images/20Julio2.jpg);
+	background: url(images/palmaCera.jpg);
 	background-position: center center;
 	background-size: cover;
 
 }
 section .slide:nth-child(4)
 {
-	background: url(images/20Julio3.jpg);
+	background: url(images/orquidea.jpg);
 	background-position: center center;
 	background-size: cover;
 
 }
 section .slide:nth-child(5)
 {
-	background: url(images/20Julio-florero.jpg);
+	background: url(images/coffe.jpg);
 	background-position: center center;
 	background-size: cover;
 
@@ -69,18 +98,14 @@ section .slide .content
 {
 	position: absolute;
 	bottom: 0;
-	margin: 40px;
-	padding: 30px;
-	background: rgb(255,235,59);
-	background: linear-gradient(90deg, rgba(255,214,0,1) 50%, rgba(25,118,210,1) 75%, rgba(183,28,28,1) 95%);
-	background: -o-linear-gradient(90deg, rgba(255,214,0,1) 50%, rgba(25,118,210,1) 75%, rgba(183,28,28,1) 95%);
-    background: -webkit-linear-gradient(90deg, rgba(255,214,0,1) 50%, rgba(25,118,210,1) 75%, rgba(183,28,28,1) 95%);
-	background: -moz-linear-gradient(90deg, rgba(255,214,0,1) 50%, rgba(25,118,210,1) 75%, rgba(183,28,28,1) 95%);
+	margin: 1em;
+	padding: 1em;
+	background: #000;
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
 	transition: 0s;
-	transform: translateY(100px);
+	transform: translateY(20em);
 }
 section .slide:hover .content
 {
